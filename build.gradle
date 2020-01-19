@@ -24,6 +24,9 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+
+	// Specified integration test dependency
+	integrationTestImplementation 'org.testcontainers:postgresql:1.12.3'
 }
 
 test {
